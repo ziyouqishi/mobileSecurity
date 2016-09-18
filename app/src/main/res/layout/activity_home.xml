@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.liang.mobilesafe.HomeActivity">
+    <TextView
+        android:gravity="center"
+        android:background="#8866ff00"
+        android:id="@+id/version_name"
+        android:textColor="#000000"
+        android:text="功能列表"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:textAppearance="?attr/textAppearanceLargePopupMenu"
+        android:layout_height="55dp" />
+
+    <TextView
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:text="最新的手机卫士快来下载呀，下载送大礼包，最新的手机卫士快来下载呀，下载送大礼包，最新的手机卫士快来下载呀，下载送大礼包"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <GridView
+        android:id="@+id/list_home"
+        android:layout_marginTop="15dp"
+        android:verticalSpacing="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3">
+
+    </GridView>
+
+</LinearLayout>
