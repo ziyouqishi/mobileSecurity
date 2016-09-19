@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sim_setting"
+    android:background="@drawable/sim_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.liang.mobilesafe.SimSettingActivity">
+
+    <TextView
+        android:id="@+id/tv_one"
+        android:textSize="20sp"
+        android:textColor="#99000000"
+        android:text="通过绑定SIM卡:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@+id/tv_one"
+        android:id="@+id/tv_two"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textColor="#99000000"
+        android:text="下次重启手机如果发现SIM卡变动就会发送报警短信:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_below="@+id/tv_two"
+        android:layout_margin="10dp"
+        android:id="@+id/view"
+        android:background="#55000000"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_blind"
+        android:layout_below="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_three"
+            android:textSize="18sp"
+            android:textColor="#99000000"
+            android:text="SIM卡没有绑定"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/isBlind"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/button_2"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下一步"/>
+
+</RelativeLayout>

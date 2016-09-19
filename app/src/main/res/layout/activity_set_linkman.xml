@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_set_linkman"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/lineman_bg"
+    tools:context="com.example.liang.mobilesafe.SetLinkmanActivity">
+    <TextView
+        android:id="@+id/tv_one"
+        android:textSize="20sp"
+        android:textColor="#99000000"
+        android:text="SIM卡变更后:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@+id/tv_one"
+        android:id="@+id/tv_two"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textColor="#99000000"
+        android:text="报警短信会发送给安全号码:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/otherNum"
+        android:layout_below="@+id/tv_two"
+        android:layout_width="match_parent"
+        android:hint="请输入安全号码"
+        android:layout_marginTop="10dp"
+        android:inputType="phone"
+        android:maxEms="15"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button_1"
+        android:onClick="chooseLineman"
+        android:layout_below="@+id/otherNum"
+        android:background="@drawable/button_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请选择联系人"/>
+
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/button_2"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下一步"/>
+    <ListView
+        android:id="@+id/listview"
+        android:visibility="gone"
+        android:layout_below="@+id/button_1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_2"
+        ></ListView>
+
+
+
+</RelativeLayout>

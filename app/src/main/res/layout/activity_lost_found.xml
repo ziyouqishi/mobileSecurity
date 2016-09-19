@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_lost_found"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.liang.mobilesafe.LostFoundActivity">
+    <TextView
+        android:gravity="center"
+        android:background="#8866ff00"
+        android:id="@+id/version_name"
+        android:textColor="#000000"
+        android:text="功能列表"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:textAppearance="?attr/textAppearanceLargePopupMenu"
+        android:layout_height="55dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:text="安全号码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_alignParentRight="true"
+            android:text="xxx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:background="#55000000"
+        android:layout_height="0.1dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:text="防盗保护是否开启"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@android:drawable/ic_lock_lock"
+            android:layout_alignParentRight="true"
+            android:layout_width="23dp"
+            android:layout_height="23dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:background="#55000000"
+        android:layout_height="0.1dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:onClick="reEnterSettings"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:text="绑定SIM卡"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:background="#55000000"
+        android:layout_height="0.1dp"/>
+
+    <TextView
+        android:background="#44000000"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:padding="10dp"
+        android:text="功能简介"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:background="#55000000"
+        android:layout_height="0.1dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPS追踪:#*location*#"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:drawableLeft="@android:drawable/star_big_on"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="播放报警音乐:#*alarm*#"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:drawableLeft="@android:drawable/star_big_on"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="远程删除数据:#*wipedata*#"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:drawableLeft="@android:drawable/star_big_on"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="远程锁屏:#*lockscreen*#"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:drawableLeft="@android:drawable/star_big_on"/>
+
+
+</LinearLayout>

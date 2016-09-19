@@ -22,6 +22,7 @@ public class SplashActivity extends AppCompatActivity {
                 Intent intent=new Intent(SplashActivity.this,HomeActivity.class);
                 startActivity(intent);
                 finish();
+                overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
 
             }
         }
